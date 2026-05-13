@@ -1,0 +1,392 @@
+html{
+	scroll-behavior:smooth;
+}
+body{
+	background-color:#0c1a24;
+	margin:0;
+	font-family:Arial;
+	color:white;
+	transition:0.3s;
+}
+
+/* =========================
+   Encabezado
+========================= */
+
+header{
+	background-color:#09131a;
+	padding:25px;
+}
+header h1{
+	color:white;
+}
+.encabezado{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:15px;
+}
+.logo{
+	width:80px;
+}
+h1{
+	font-size:36px;
+}
+
+/* =========================
+   Cambio de html
+========================= */
+
+nav{
+	background-color:#142733;
+	padding:12px;
+}
+.menu{
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	margin:0;
+	padding:0;
+}
+.menu a{
+	color:white;
+	text-decoration:none;
+	font-size:18px;
+}
+.menu a:hover{
+	color:#4da6ff;
+}
+
+/* =========================
+   Banner
+========================= */
+
+.banner{
+	background-color:#09131a;
+}
+.banner img{
+	width:100%;
+	height:65vh;
+	min-height:350px;
+	max-height:650px;
+	object-fit:contain;
+	object-position:center;
+	display:block;
+}
+
+/* =========================
+   Índice
+========================= */
+
+.menu-interno{
+	background-color:#142733;
+	padding:20px;
+	border-radius:10px;
+	width:260px;
+	margin:20px auto;
+	text-align:center;
+}
+.menu-interno h2{
+	color:white;
+	margin-bottom:10px;
+}
+.menu-interno ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.menu-interno li{
+	margin:10px 0;
+}
+.menu-interno a{
+	color:#4da6ff;
+	text-decoration:none;
+	font-size:18px;
+	transition:0.2s;
+}
+.menu-interno a:hover{
+	color:white;
+	background:#4da6ff;
+	padding:2px 6px;
+	border-radius:5px;
+}
+
+/* =========================
+   Info general
+========================= */
+
+.introduccion{
+	padding:30px;
+	text-align:center;
+	max-width:1000px;
+	margin:auto;
+}
+.introduccion p{
+	color:#b0c4d4;
+	line-height:1.7;
+	font-size:17px;
+}
+
+/* =========================
+   Info juego
+========================= */
+
+.info-juego{
+	padding:30px;
+	text-align:center;
+}
+.info-grid{
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	flex-wrap:wrap;
+	max-width:1200px;
+	margin:auto;
+}
+.info-item{
+	width:220px;
+	background:#142733;
+	padding:15px;
+	border-radius:10px;
+	text-align:center;
+	transition:0.3s;
+	box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+.info-item:hover{
+	transform:scale(1.05);
+}
+.info-item img{
+	width:150px;
+	margin:10px auto;
+	display:block;
+	border-radius:8px;
+}
+.info-item p{
+	color:#b0c4d4;
+	line-height:1.5;
+}
+
+/* =========================
+   Extras
+========================= */
+
+.extra{
+	text-align:center;
+	padding:40px 20px;
+	max-width:1200px;
+	margin:auto;
+}
+.extra h2{
+	color:white;
+	margin-bottom:20px;
+}
+
+/* =========================
+   Wikipedia
+========================= */
+
+#wiki iframe{
+	width:90%;
+	max-width:1200px;
+	height:650px;
+	border:none;
+	border-radius:10px;
+	margin:0 auto;
+	display:block;
+}
+
+/* =========================
+   Trailer
+========================= */
+
+#trailer img{
+	width:525px;
+	max-width:90%;
+	height:auto;
+	border-radius:10px;
+	transition:0.3s;
+}
+#trailer img:hover{
+	transform:scale(1.05);
+}
+
+/* =========================
+   Audio
+========================= */
+
+audio{
+	margin-top:15px;
+	width:300px;
+	max-width:90%;
+}
+
+/* =========================
+   Botones
+========================= */
+
+button{
+	padding:10px 15px;
+	background-color:#4da6ff;
+	border:none;
+	color:white;
+	cursor:pointer;
+	margin:10px;
+	border-radius:5px;
+	transition:0.3s;
+}
+button:hover{
+	background-color:#2d7cd6;
+	transform:scale(1.05);
+}
+
+/* =========================
+   Formulario
+========================= */
+
+.form-box{
+	background:#142733;
+	margin:40px auto;
+	padding:20px;
+	border-radius:10px;
+	text-align:center;
+	max-width:450px;
+	box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+form{
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	align-items:center;
+}
+input,
+textarea,
+select{
+	padding:8px;
+	width:80%;
+	border-radius:5px;
+	border:none;
+}
+textarea{
+	min-height:100px;
+	resize:vertical;
+}
+
+/* =========================
+   Pie de pagina
+========================= */
+
+footer{
+	background:#09131a;
+	text-align:center;
+	padding:20px;
+	margin-top:30px;
+}
+footer p{
+	color:#b0c4d4;
+}
+footer a{
+	color:#4da6ff;
+	text-decoration:none;
+}
+footer a:hover{
+	text-decoration:underline;
+}
+footer img{
+	margin-top:10px;
+	border-radius:8px;
+}
+
+/* =========================
+   Modo claro javascript
+========================= */
+
+.modo-claro{
+	background-color:#f2f2f2;
+	color:black;
+}
+.modo-claro .introduccion,
+.modo-claro .info-juego,
+.modo-claro .extra{
+	color:black;
+}
+.modo-claro .introduccion h2,
+.modo-claro .info-juego h2,
+.modo-claro .extra h2{
+	color:black;
+}
+
+/* cajas */
+
+.modo-claro .info-item{
+	background:#dcdcdc;
+}
+.modo-claro .info-item p{
+	color:#222;
+}
+
+/* formulario */
+
+.modo-claro .form-box{
+	background:#e6e6e6;
+	color:black;
+}
+.modo-claro .form-box h2,
+.modo-claro .form-box label{
+	color:black;
+}
+.modo-claro .form-box input,
+.modo-claro .form-box textarea,
+.modo-claro .form-box select{
+	color:black;
+	background:white;
+}
+
+/* índice */
+
+.modo-claro .menu-interno{
+	background:#e6e6e6;
+}
+.modo-claro .menu-interno h2{
+	color:black;
+}
+/* footer */
+
+.modo-claro footer{
+	background:#d9d9d9;
+}
+.modo-claro footer p{
+	color:black;
+}
+
+/* =========================
+   Depende del dispositivo
+========================= */
+
+@media (max-width:768px){
+
+	.banner img{
+		height:40vh;
+		min-height:220px;
+	}
+
+	#wiki iframe{
+		height:300px;
+	}
+
+	.info-item{
+		width:90%;
+	}
+
+	.menu-interno{
+		width:85%;
+	}
+
+	#trailer img{
+		width:95%;
+	}
+
+	.form-box{
+		width:90%;
+	}
+}

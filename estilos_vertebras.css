@@ -1,0 +1,268 @@
+html{
+	scroll-behavior:smooth;
+}
+
+body{
+	background-color:#0c1a24;
+	margin:0;
+	font-family:Arial;
+	color:white;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+	background-color:#09131a;
+	padding:20px;
+}
+
+.encabezado{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:15px;
+}
+
+.logo{
+	width:70px;
+}
+
+h1{
+	font-size:32px;
+	margin:0;
+}
+
+/* =========================
+   NAV
+========================= */
+
+nav{
+	background-color:#142733;
+	padding:10px;
+}
+
+.menu{
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	margin:0;
+	padding:0;
+}
+
+.menu a{
+	color:white;
+	text-decoration:none;
+	font-size:18px;
+	transition:0.3s;
+}
+
+.menu a:hover{
+	color:#4da6ff;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner-regiones{
+	background-color:#09131a;
+}
+
+.banner-regiones img{
+	width:100%;
+	height:65vh;
+	min-height:350px;
+	max-height:650px;
+	object-fit:contain;
+	object-position:center;
+	display:block;
+}
+
+
+/* =========================
+   ÍNDICE
+========================= */
+
+.menu-interno{
+	background-color:#142733;
+	padding:20px;
+	border-radius:10px;
+	width:260px;
+	margin:25px auto;
+	text-align:center;
+}
+
+.menu-interno h2{
+	margin:0 0 15px 0;
+}
+
+.menu-interno ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.menu-interno li{
+	margin:12px 0;
+}
+
+.menu-interno a{
+	color:#4da6ff;
+	text-decoration:none;
+	font-size:18px;
+	transition:0.3s;
+}
+
+.menu-interno a:hover{
+	color:white;
+	background-color:#4da6ff;
+	padding:4px 8px;
+	border-radius:5px;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-enciclopedia{
+	text-align:center;
+	padding:25px;
+	max-width:900px;
+	margin:auto;
+	color:#b0c4d4;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.contenedor-boton{
+	text-align:center;
+	margin:15px 0;
+}
+
+.boton-mapa{
+	padding:10px 15px;
+	background-color:#4da6ff;
+	border:none;
+	border-radius:5px;
+	color:white;
+	cursor:pointer;
+	transition:0.3s;
+}
+
+.boton-mapa:hover{
+	background-color:#2d7cd6;
+	transform:scale(1.05);
+}
+
+/* =========================
+   TABLA
+========================= */
+
+.tabla-peces table{
+	margin:auto;
+	border-collapse:collapse;
+	width:90%;
+	max-width:900px;
+	background-color:#142733;
+	border-radius:10px;
+	overflow:hidden;
+	box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+
+.tabla-peces th,
+.tabla-peces td{
+	border:1px solid #0c1a24;
+	padding:10px;
+	text-align:center;
+	color:white;
+}
+
+.tabla-peces th{
+	background-color:#4da6ff;
+	color:white;
+}
+
+.tabla-peces tr:nth-child(even){
+	background-color:#1b3444;
+}
+
+.tabla-peces tr:hover{
+	background-color:#09131a;
+}
+
+/* =========================
+   MODO CLARO TABLA
+========================= */
+
+.tabla-clara{
+	background-color:#1a1423;
+	color:#e6d6ff;
+}
+
+/* celdas */
+.tabla-clara th,
+.tabla-clara td{
+	background-color:#241a33;
+	color:#e6d6ff;
+	border:1px solid #3a2b52;
+}
+
+/* cabecera */
+.tabla-clara th{
+	background-color:#6a3db8;
+	color:white;
+}
+
+/* filas alternas */
+.tabla-clara tr:nth-child(even){
+	background-color:#2c1f3d;
+}
+
+/* hover suave */
+.tabla-clara tr:hover{
+	background-color:#3a2a52;
+}
+
+/* =========================
+   MAPA / INFO
+========================= */
+
+.info-extra{
+	text-align:center;
+	padding:30px;
+	max-width:900px;
+	margin:auto;
+}
+
+.info-extra img{
+	width:100%;
+	max-width:800px;
+	border-radius:10px;
+	margin:15px auto;
+	display:block;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+	background-color:#09131a;
+	text-align:center;
+	padding:20px;
+	margin-top:30px;
+}
+
+footer a{
+	color:#4da6ff;
+	text-decoration:none;
+}
+
+footer a:hover{
+	color:white;
+}

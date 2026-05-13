@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Las Vértebras - Dredge</title>
+
+	<link rel="stylesheet" href="estilos_vertebras.css">
+	<link rel="icon" type="image/png" href="imagenes/icono.png">
+
+	<script src="script_vertebras.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+	<div class="encabezado">
+		<img src="imagenes/logo.png" alt="Logo Dredge" class="logo">
+		<h1>Las Vértebras</h1>
+	</div>
+</header>
+
+<!-- NAV -->
+<nav>
+	<ul class="menu">
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="regiones.html">Regiones</a></li>
+	</ul>
+</nav>
+
+<!-- BANNER -->
+<section class="banner-regiones">
+	<img src="imagenes/dredge.jpg" alt="Banner">
+</section>
+
+<!-- ÍNDICE -->
+<section class="menu-interno">
+	<h2>Índice</h2>
+	<ul>
+		<li><a href="#info">Información</a></li>
+		<li><a href="#tabla">Tabla de peces</a></li>
+		<li><a href="#mapa">Mapa</a></li>
+	</ul>
+</section>
+
+<!-- INTRO -->
+<section id="info" class="intro-enciclopedia">
+	<h2>Las Vértebras</h2>
+	<p>
+	Zona inicial del juego donde comienzas tu aventura y aprendes las mecánicas básicas.
+	</p>
+</section>
+
+<!-- BOTÓN TABLA (CENTRADO CORRECTO) -->
+<div class="contenedor-boton">
+	<button class="boton-mapa" onclick="cambiarColorTabla()">
+		Cambiar color tabla
+	</button>
+</div>
+
+<!-- TABLA -->
+<section id="tabla" class="tabla-peces">
+
+	<table>
+
+		<tr>
+			<th>Imagen</th>
+			<th>Nombre</th>
+			<th>Tipo</th>
+			<th>Horario</th>
+		</tr>
+
+		<tr>
+			<td><img src="imagenes/Peces/bacalao.png" alt="Bacalao"></td>
+			<td>Bacalao</td>
+			<td>Costero</td>
+			<td>Día</td>
+		</tr>
+
+		<tr>
+			<td><img src="imagenes/Peces/caballa_a.png" alt="Caballa"></td>
+			<td>Caballa Azul</td>
+			<td>Costero</td>
+			<td>Día</td>
+		</tr>
+		
+		<tr>
+			<td><img src="imagenes/Peces/calamar_f.png" alt="Calamar flecha"></td>
+			<td>Calamar flecha</td>
+			<td>Costero</td>
+			<td>Noche</td>
+		</tr>
+		
+		<tr>
+			<td><img src="imagenes/Peces/Anguila_g.png" alt="Anguila gris"></td>
+			<td>Anguila gris</td>
+			<td>Superficial</td>
+			<td>Día/Noche</td>
+		</tr>
+		
+		<tr>
+			<td><img src="imagenes/Peces/Lenguado_dg.png" alt="Lenguado del golfo"></td>
+			<td>Lenguado del golfo</td>
+			<td>Superficial</td>
+			<td>Día</td>
+		</tr>
+		
+		<tr>
+			<td><img src="imagenes/Peces/Mero_n.png" alt="Mero Negro"></td>
+			<td>Mero Negro</td>
+			<td>Superficial</td>
+			<td>Noche</td>
+		</tr>
+		
+		<tr>
+			<td><img src="imagenes/Peces/Pez_v.png" alt="Pez Vela"></td>
+			<td>Pez Vela</td>
+			<td>Oceanico</td>
+			<td>Día</td>
+		</tr>
+		
+		<tr>
+			<td><img src="imagenes/Peces/tiburon_apn.png" alt="Tiburon de arrecife de punta negra"></td>
+			<td>Tiburon de arrecife de punta negra</td>
+			<td>Oceanico</td>
+			<td>Noche</td>
+		</tr>
+		
+		<tr>
+			<td><img src="imagenes/Peces/cangrejo_c.png" alt="Cangrejo comun"></td>
+			<td>Cangrejo comun</td>
+			<td>Trampa de cangrejos</td>
+			<td>Día/noche</td>
+		</tr>
+
+	</table>
+
+</section>
+
+<!-- MAPA + INFO -->
+<section id="mapa" class="info-extra">
+
+	<h2>Mapa de la región</h2>
+
+	<img src="imagenes/mapa_vertebras.jpg" alt="Mapa">
+
+	<p>
+	Las Vértebras es una zona tranquila con secretos ocultos bajo sus aguas.
+	</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+	<p>Basado en la <a href="https://dredge.wiki.gg/" target="_blank"> wiki oficial de Dredge</a></p>
+	<p>Alumno 2º BACH - Proyecto TIC</p>
+	<a href="https://store.steampowered.com/app/1562430/DREDGE/" target="_blank">Ver juego oficial en steam</a>
+	<p>Escanea este QR para ver algo interesante:</p>
+	<img src="imagenes/qr_dredge.png" alt="QR Dredge" width="120">
+</footer>
+
+</body>
+</html>

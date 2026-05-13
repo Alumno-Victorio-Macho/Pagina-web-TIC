@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Enciclopedia de regiones del videojuego Dredge">
+	<title>Enciclopedia - Regiones | Dredge</title>
+	<link rel="stylesheet" href="estilos_regiones.css">
+	<link rel="icon" type="image/png" href="imagenes/icono.png">
+	<script src="script_regiones.js" defer></script>
+</head>
+
+<body>
+
+<!-- Encabezado -->
+<header>
+	<div class="encabezado">
+		<img src="imagenes/logo.png" alt="Logo Dredge" class="logo">
+
+		<h1>Enciclopedia de Regiones</h1>
+	</div>
+</header>
+
+<!-- Cambio de html -->
+<nav>
+	<ul class="menu">
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="regiones.html">Regiones</a></li>
+	</ul>
+</nav>
+
+<!-- Banner -->
+<section class="banner-regiones">
+	<img src="imagenes/dredge.jpg" alt="Banner regiones">
+</section>
+
+<!-- Índice -->
+<section class="menu-interno">
+	<h2>Índice</h2>
+	<ul>
+		<li><a href="#regiones">Regiones principales</a></li>
+		<li><a href="#info">Información del mapa</a></li>
+		<li><a href="#tabla">Tabla de regiones</a></li>
+		<li><a href="#footer">Pie de página</a></li>
+	</ul>
+</section>
+
+<!-- Intro -->
+<section class="intro-enciclopedia">
+	<h2>Selecciona una región</h2>
+	<p>
+	Explora todas las zonas del mundo de Dredge y descubre sus peces,
+	secretos y peligros únicos. Cada región posee criaturas especiales,
+	habitantes misteriosos y mecánicas diferentes.
+	</p>
+</section>
+
+<!-- Regiones -->
+<section id="regiones" class="grid-regiones">
+	<div class="region-card">
+		<img src="imagenes/zona1.jpg" alt="Las Vértebras">
+		<h3>Las Vértebras</h3>
+		<p>
+		La región inicial del juego donde comienzas tu aventura y aprendes
+		las mecánicas básicas de navegación, pesca y mejora del barco.
+		</p>
+		<a href="vertebras.html">Ver peces</a>
+	</div>
+	<div class="region-card">
+		<img src="imagenes/zona2.jpg" alt="Acantilados del Vendaval">
+		<h3>Acantilados del Vendaval</h3>
+		<p>
+		Un enorme archipiélago lleno de rocas peligrosas, fuertes corrientes
+		y criaturas ocultas entre la niebla.
+		</p>
+		<a href="https://as2.ftcdn.net/jpg/03/43/73/31/1000_F_343733140_al4QQWeOH16Ci1h2WNqbecl2Srh9b1e2.jpg">
+		Ver peces
+		</a>
+	</div>
+	<div class="region-card">
+		<img src="imagenes/zona3.jpg" alt="Cuenca Estelar">
+		<h3>Cuenca Estelar</h3>
+		<p>
+		Una zona oceánica profunda y oscura donde habitan criaturas abisales
+		y extrañas anomalías marinas.
+		</p>
+		<a href="https://as2.ftcdn.net/jpg/03/43/73/31/1000_F_343733140_al4QQWeOH16Ci1h2WNqbecl2Srh9b1e2.jpg">
+		Ver peces
+		</a>
+	</div>
+	<div class="region-card">
+		<img src="imagenes/zona4.jpg" alt="Manglar Siniestro">
+		<h3>Manglar Siniestro</h3>
+		<p>
+		Una peligrosa región pantanosa llena de raíces, aguas turbias
+		y criaturas ocultas entre los manglares.
+		</p>
+		<a href="https://as2.ftcdn.net/jpg/03/43/73/31/1000_F_343733140_al4QQWeOH16Ci1h2WNqbecl2Srh9b1e2.jpg">
+		Ver peces
+		</a>
+	</div>
+	<div class="region-card">
+		<img src="imagenes/zona5.jpg" alt="Espinazo del Diablo">
+		<h3>Espinazo del Diablo</h3>
+		<p>
+		La región volcánica final del juego donde el océano hierve y
+		las criaturas más peligrosas esperan en la oscuridad.
+		</p>
+		<a href="https://as2.ftcdn.net/jpg/03/43/73/31/1000_F_343733140_al4QQWeOH16Ci1h2WNqbecl2Srh9b1e2.jpg">
+		Ver peces
+		</a>
+	</div>
+</section>
+
+<!-- Info extra -->
+<section id="info" class="info-extra">
+	<h2>Mapa del mundo</h2>
+	<p>
+	El mundo de Dredge está dividido en diferentes regiones conectadas
+	entre sí por el océano abierto. Cada zona tiene especies únicas,
+	misiones propias y peligros especiales que cambian la experiencia
+	del jugador durante la exploración.
+	</p>
+	<button class="boton-mapa" onclick="mostrarMapa()">
+	Mostrar / Ocultar mapa
+	</button>
+	<button class="boton-mapa" onclick="cambiarMapa()">
+	Cambiar estilo de mapa
+	</button>
+	<img id="mapa" src="imagenes/mapa_completo.jpg" alt="Mapa completo de Dredge">
+</section>
+
+<!-- Tabla contenidos -->
+<section id="tabla" class="tabla-regiones">
+	<h2>Resumen de regiones</h2>
+	<table>
+		<tr>
+			<th>Región</th>
+			<th>Dificultad</th>
+			<th>Peligro</th>
+		</tr>
+		<tr>
+			<td>Las Vértebras</td>
+			<td>Baja</td>
+			<td>Bajo</td>
+		</tr>
+		<tr>
+			<td>Acantilados del Vendaval</td>
+			<td>Media</td>
+			<td>Alto</td>
+		</tr>
+		<tr>
+			<td>Cuenca Estelar</td>
+			<td>Alta</td>
+			<td>Muy alto</td>
+		</tr>
+		<tr>
+			<td>Manglar Siniestro</td>
+			<td>Media</td>
+			<td>Alto</td>
+		</tr>
+		<tr>
+			<td>Espinazo del Diablo</td>
+			<td>Muy alta</td>
+			<td>Extremo</td>
+		</tr>
+	</table>
+</section>
+
+<!-- Parte de abajo -->
+<footer>
+	<p>Basado en la <a href="https://dredge.wiki.gg/" target="_blank"> wiki oficial de Dredge</a></p>
+	<p>Alumno 2º BACH - Proyecto TIC</p>
+	<a href="https://store.steampowered.com/app/1562430/DREDGE/" target="_blank">Ver juego oficial en steam</a>
+	<p>Escanea este QR para ver algo interesante:</p>
+	<img src="imagenes/qr_dredge.png" alt="QR Dredge" width="120">
+</footer>
+
+</body>
+</html>

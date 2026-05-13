@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wiki - Dredge</title>
+	<link rel="stylesheet" href="estilos_index.css">
+	<link rel="icon" href="imagenes/icono.png">
+	<script src="script_index.js" defer></script>
+</head>
+
+<body>
+<!-- Encabezado -->
+	<header>
+		<div class="encabezado">
+			<img src="imagenes/logo.png" class="logo" alt="Logo dredge">
+			<h1>Wiki Dredge</h1>
+		</div>
+	</header>
+	
+<!-- Cambio de html -->
+<nav>
+	<ul class="menu">
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="regiones.html">Regiones</a></li>
+	</ul>
+</nav>
+
+<!-- Banner -->
+<section id="banner" class="banner">
+	<img src="imagenes/dredge.jpg" alt="Banner">
+</section>
+
+<!-- Indice -->
+<section class="menu-interno">
+	<h2>Índice</h2>
+	<ul>
+		<li><a href="#info">Sobre el juego</a></li>
+		<li><a href="#wiki">Wikipedia del juego</a></li>
+		<li><a href="#trailer">Trailer del juego</a></li>
+		<li><a href="#audio">Audio del juego</a></li>
+		<li><a href="#personalizacion">Personalización página</a></li>
+		<li><a href="#formulario">Opinión</a></li>
+	</ul>
+</section>
+
+<!-- Introduccion -->
+<section class="introduccion">
+	<h2>Bienvenido a la Wiki de Dredge</h2>
+	<p>
+	Dredge es un juego de pesca con elementos de terror donde exploras un océano lleno de misterios.
+	Durante el día todo parece tranquilo, pero por la noche surgen criaturas y peligros ocultos.
+	</p>
+	<p>
+	En esta web encontrarás información sobre regiones, peces y mecánicas del juego.
+	</p>
+</section>
+
+<!-- Sobre el juego -->
+<section id="info" class="info-juego">
+	<h2>Sobre el juego</h2>
+	<div class="info-grid">
+		<div class="info-item">
+			<h3>Exploración</h3>
+			<img src="imagenes/mapa.jpg" alt="mapa">
+			<p>Explora diferentes zonas del océano cada una con un misterio nuevo que resolver.</p>
+		</div>
+		<div class="info-item">
+			<h3>Pesca</h3>
+			<img src="imagenes/peces/Pez_duende.png" alt="Pez duende">
+			<p>Captura más de 100 especies de peces y sus aberraciones especiales.</p>
+		</div>
+		<div class="info-item">
+			<h3>Terror</h3>
+			<img src="imagenes/Monstruo1.jpg" alt="Monstruo">
+			<p>La noche es peligrosa con criaturas que pueden destruir tu barco.</p>
+		</div>
+		<div class="info-item">
+			<h3>Misterio</h3>
+			<img src="imagenes/Personaje1.png" alt="Personaje1">
+			<p>Descubre secretos ocultos con una gran historia interesante.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Wikipedia -->
+<section id="wiki" class="extra">
+	<h2>Wikipedia del juego</h2>
+	<iframe src="https://es.wikipedia.org/wiki/Dredge"></iframe>
+</section>
+
+<!-- Trailer del juego -->
+<section id="trailer" class="extra">
+	<h2>Trailer del juego</h2>
+	<a href="https://youtu.be/QJSnBwus6kI" target="_blank">
+		<img src="imagenes/video.png" alt="Trailer juego">
+	</a>
+</section>
+
+<!-- Audio -->
+<section class="extra" id="audio">
+	<h2>Audio del juego</h2>
+	<p>Muestra de la musica del menu del juego:</p>
+	<audio controls>
+		<source src="imagenes/audio_dredge.mp3" type="audio/mpeg">
+		Tu navegador no soporta audio.
+	</audio>
+</section>
+
+<!-- Personalizacion (javascript) -->
+<section id="personalizacion" class="extra">
+	<h2>Personalización página</h2>
+	<p>Puedes cambiar el modo de la página:</p>
+	<button onclick="cambiarModo()">Modo claro / oscuro</button>
+	<p>Cambiar imagen del banner:</p>
+	<button onclick="banner1()">Banner original</button>
+	<button onclick="banner2()">Banner alternativo</button>
+</section>
+
+<!-- Geolocalización -->
+<section class="extra" id="geo">
+	<h2>Tu ubicación</h2>
+	<p>Pulsa el botón para ver tu ubicación aproximada:</p>
+	<button onclick="obtenerUbicacion()">Mostrar ubicación</button>
+	<p id="ubicacion"></p>
+</section>
+
+<!-- Formulario de opinion -->
+<section id="formulario" class="form-box">
+	<h2>Opinión sobre la web</h2>
+	<form>
+		<input type="text" placeholder="Nombre" required>
+		<input type="email" placeholder="Correo" required>
+		<label>Fecha:</label>
+		<input type="date" required>
+		<label>Nota (1-10):</label>
+		<input type="number" min="1" max="10" required>
+		<textarea placeholder="Opinión"></textarea>
+		<input type="submit">
+	</form>
+</section>
+
+<!-- Pie de pagina -->
+<footer>
+	<p>Basado en la <a href="https://dredge.wiki.gg/" target="_blank"> wiki oficial de Dredge</a></p>
+	<p>Alumno 2º BACH - Proyecto TIC</p>
+	<a href="https://store.steampowered.com/app/1562430/DREDGE/" target="_blank">Ver juego oficial en steam</a>
+	<p>Escanea este QR para ver algo interesante:</p>
+	<img src="imagenes/qr_dredge.png" alt="QR Dredge" width="120">
+</footer>
+</body>
+</html>
